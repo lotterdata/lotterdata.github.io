@@ -1,7 +1,7 @@
 ---
+layout: post
 title: "Sock Matching Puzzle"
 author: "Stephen Penrice"
-date: "12/21/2019"
 ---
 
 
