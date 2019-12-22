@@ -3,7 +3,7 @@ layout: post
 title: "Sock Matching Puzzle"
 author: "Stephen Penrice"
 ---
-
+<base target="_blank"/>
 
 ## Problem Statement
 From the FiveThirtyEight website:
