@@ -3,10 +3,7 @@ title: "Sock Matching Puzzle"
 author: "Stephen Penrice"
 date: "12/21/2019"
 ---
-<base target="_blank"/>
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
-```
+
 
 ## Problem Statement
 From the FiveThirtyEight website:
