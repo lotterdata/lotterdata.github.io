@@ -27,4 +27,4 @@ Of course $P(X>0)=1$, so the following assumes $i>0$. The key idea for finding $
 
 Plugging into the equation above gives us an average of $$\sum_{i=0}^{N}P(X>i) = \sum_{i=0}^{N} 2^i\frac{N!}{(N-i)!}\frac{(2N-i)!}{(2N)!} = \frac{N!}{(2N)!}\sum_{i=0}^{N}2^i\frac{(2N-i)!}{(N-i)!}$$
 
-The following R code implements both approaches, showing that they really do give the same answer. The answer for $N=10$ is 5.675464.
+The answer for $N=10$ is 5.675464.
