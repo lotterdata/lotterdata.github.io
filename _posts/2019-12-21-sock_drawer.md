@@ -19,8 +19,13 @@ Extra credit: Instead of 10 pairs of socks, what if I have some large number N p
 ## Solution
 I'll jump straight to the extra credit; the case $N = 10$ can be obtained by plugging in.
 
-The most familiar way to find the average, i.e. the expected value of $X$ (the number of socks drawn), would be to calculate $$\sum_{i=1}^{N+1}iP(X=i)$$
-However there is a trick available because of the fact that the number of socks drawn is a positive integer. The sum above is equal to $$\sum_{i=0}^{N}P(X>i)$$
+The most familiar way to find the average, i.e. the expected value of $X$ (the number of socks drawn), would be to calculate 
+
+$$\sum_{i=1}^{N+1}iP(X=i)$$.
+
+However there is a trick available because of the fact that the number of socks drawn is a positive integer. The sum above is equal to 
+$$\sum_{i=0}^{N}P(X>i)$$.
+
 This is because in the second sum $P(X=1)$ is included once (in the $P(X>0)$ term only), $P(X=2)$ is included twice (in the $P(X>0)$ and $P(X>1)$ terms), and so on. This approach is preferable because there is a neat way to express $P(X>i)$.
 
 Of course $P(X>0)=1$, so the following assumes $i>0$. The key idea for finding $P(X>i)$ is that $X>i$ if and only if the first $i$ socks are all different. The number of ways of choosing $i$ distinct socks is $2N(2N-2) \cdots (2N-2(i-1))$ because we have $2N$ choices for the first sock, leaving $2N-2$ choices for the second, and so on. Similarly the total number of ways of choosing $i$ socks sequentially is $2N(2N-1) \cdots (2N-(i-1))$.  So the probability that $X > i$ is $$\frac{2N(2N-2) \cdots (2N-2(i-1))}{2N(2N-1) \cdots (2N-(i-1))}=2^i\frac{N!}{(N-i)!}\frac{(2N-i)!}{(2N)!}$$ Luckily, this expression is 1 when $i=0$ so we can use it in that case as well. 
